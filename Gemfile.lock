@@ -62,6 +62,7 @@ GEM
       zeitwerk (~> 2.3)
     addressable (2.8.4)
       public_suffix (>= 2.0.2, < 6.0)
+    amazing_print (1.5.0)
     bindex (0.8.1)
     bootsnap (1.16.0)
       msgpack (~> 1.2)
@@ -192,6 +193,8 @@ GEM
       actionpack (>= 5.2)
       activesupport (>= 5.2)
       sprockets (>= 3.0.0)
+    stimulus-rails (1.2.1)
+      railties (>= 6.0.0)
     thor (1.2.2)
     tilt (2.1.0)
     timeout (0.3.2)
@@ -200,6 +203,10 @@ GEM
     turbolinks-source (5.2.0)
     tzinfo (2.0.6)
       concurrent-ruby (~> 1.0)
+    view_component (3.0.0)
+      activesupport (>= 5.2.0, < 8.0)
+      concurrent-ruby (~> 1.0)
+      method_source (~> 1.0)
     web-console (4.2.0)
       actionview (>= 6.0.0)
       activemodel (>= 6.0.0)
@@ -226,6 +233,7 @@ PLATFORMS
   x86_64-linux
 
 DEPENDENCIES
+  amazing_print
   bootsnap (>= 1.4.4)
   capybara (>= 3.26)
   jbuilder (~> 2.7)
@@ -238,8 +246,10 @@ DEPENDENCIES
   sass-rails (>= 6)
   selenium-webdriver (>= 4.0.0.rc1)
   spring
+  stimulus-rails
   turbolinks (~> 5)
   tzinfo-data
+  view_component
   web-console (>= 4.1.0)
   webdrivers
   webpacker (~> 5.0)
